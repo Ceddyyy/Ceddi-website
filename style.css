@@ -1,97 +1,178 @@
 *{
-    margin: 0;
+    margin:0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: sans-serif;
+}
+.container, .bg, .bgg{
+    width: auto;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75));
+    background-size: cover;
+    background-position: cover;
     box-sizing: border-box;
 }
-.container{
-    width: 100%;
-    min-height: 100vh;
-    background: linear-gradient(135deg, #153677, #4e085f);
-    padding: 10px;
+.bgvideo{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
 }
-.todo-app{
-    width: 100%;
-    max-width: 540px;
-    background: #fff;
-    margin: 100px auto 20px;
-    padding: 40px 30px 70px;
-    border-radius: 10px;
+@media (min-aspect-ratio: 16/9){
+    .bgvideo{
+        width: 100%;
+        height: auto;
+    }
 }
-.todo-app h2{
-    color: #002765;
+@media (max-aspect-ratio: 16/9){
+    .bgvideo{
+        width: auto;
+        height: 100%;
+    }
+}
+.navbar{
+    height: 12%;
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
 }
-.todo-app h2 img{
-    width: 30px;
-    margin-left: 10px;
+.logo{
+    width: 70px;
+    height: 10vh;
+    cursor: pointer;
+}
+.navigation a {
+    text-decoration: none;
+    color: #fff;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+.navigation a:hover, 
+.navigation a.active {
+    background: #000;
+    color: #fff;
+}
+nav{
+    margin-right: 30px;
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+}
+h2 {
+    margin-left: 30px;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
 }
 .row{
     display: flex;
+    height: 88%;
     align-items: center;
-    justify-content: space-between;
-    background: #edeef0;
-    border-radius: 30px;
-    padding-left: 20px;
-    margin-bottom: 25px;
 }
-input{
-    flex: 1;
-    border: none;
-    outline: none;
-    background: transparent;
-    padding: 10px;
+.left-col{
+    height: 60%;
+    flex-basis: 50%;
 }
-button{
-    border: none;
-    outline: none;
-    padding: 16px 50px;
-    background: #ff5945;
+.right-col{
+    float: right;
+    margin-right: 6%;
+    display: flex;
+    align-items: center;
+}
+img{
+    margin-left: 30px;
+    cursor: pointer;
+    height: 30%;
+}
+h1{
+    margin-left: 30px;
     color: #fff;
-    cursor: pointer;
-    border-radius: 40px;
+    font-size: 80px;
 }
-ul li{
-    list-style: none;
-    font-size: 17px;
-    padding: 12px 8px 12px 50px;
-    user-select: none;
-    cursor: pointer;
-    position: relative;
+p{
+    margin-left: 30px;
+    color: #fff;
+    font-size: 15px;
+    line-height: 15px;
 }
-ul li::before{
-    content: '';
-    position: absolute;
-    height: 28px;
-    width: 28px;
-    border-radius: 50px;
-    background-image: url(images/unchecked.png);
-    background-size: cover;
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
     background-position: center;
-    top: 12px;
-    left: 8px;
+    background-size: cover;
+    transition: transform 0.5s;
 }
-ul li.checked{
-    color: #555;
-    text-decoration: line-through;
+.card1{
+    background-image: url(images/chess.png);
 }
-ul li.checked::before{
-    background-image: url(image/checked.png);
+.card2{
+    background-image: url(images/sleeping.png);
 }
-ul li span{
-    position: absolute;
-    right: 0;
-    top: 5px;
-    width: 40px;
-    height: 40px;
-    font-size: 22px;
-    color: #555;
-    line-height: 40px;
+.card3{
+    background-image: url(images/cooking.png);
+}
+.card4{
+    background-image: url(images/watching.png);
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+h3{
+    color: #fff;
+    text-shadow: 0 0 5px #999;
+}
+.card p{
+    text-shadow: 0 0 15px #000;
+    font-size: 15px;
+}
+.bg{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(images/bg.jpg);
+}
+div {
     text-align: center;
-    border-radius: 50%;
 }
-ul li span:hover{
-    background: #edeef0;
+.bgg{
+    height: 250px;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(images/bgg.jpg);
+}
+ul .SocMed{
+    text-align: center;
+    color:black;
+}
+ul .SocMed li{
+    display: flex;
+}
+ul{
+   margin: 0;
+   padding: 0; 
+}
+.Socmed li{
+    display: inline-block;
+    margin: 6px;
+    list-style: none;
+}
+.Socmed li a{
+    color: white;
+    text-decoration: none;
+    font-size: 60px;
+}
+#icon{
+    width: 80px;
+    cursor: pointer;
 }
