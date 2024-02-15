@@ -16,48 +16,48 @@ let wrongLetters = []
 let boxes
 const words = [
   {
-    word: 'Paniki',
-    hint: 'Sa araw nahihimbing, sa gabi ay gising.',
+    word: 'Black',
+    hint: 'Madilim walang ilaw.',
   },
   {
-    word: 'Gagamba',
-    hint: 'Bata pa si Nene marunong nang manahi.',
+    word: 'Song',
+    hint: 'Kinakanta mo.',
   },
   {
-    word: 'Aso',
-    hint: 'Mataas kung nakaupo, mababa kung nakatayo.',
+    word: 'Ikaw',
+    hint: 'Hindi ako.',
   },
   {
-    word: 'Kalapati',
-    hint: 'Ibon kong saan man makarating, makababalik kung saan nanggaling.',
+    word: 'Masarap',
+    hint: 'Yum yum.',
   },
   {
-    word: 'Sibuyas',
-    hint: 'Habang aking hinihiwa, ako ay pinaluluha.',
+    word: 'Computer',
+    hint: 'Dito ka nanonood ng ano.',
   },
   {
-    word: 'Saranggola',
-    hint: 'Buto’t-balat, lumilipad.',
+    word: 'Bangbang',
+    hint: 'Mobile ano.',
   },
   {
-    word: 'Sapatos',
-    hint: 'Dala mo, dala ka, dala ka pa ng iyong dala.',
+    word: 'Game',
+    hint: 'Nilalaro mo.',
   },
   {
-    word: 'Zipper',
-    hint: 'Dumaan ang hari, nagkagatan ang mga pari.',
+    word: 'Oo',
+    hint: 'Hindi ko alam.',
   },
   {
-    word: 'Lamesa',
-    hint: 'May apat na binti ngunit hindi makalakad.',
+    word: 'Ayoko',
+    hint: 'Sige nga hulaan mo.',
   },
   {
-    word: 'Bombilya',
-    hint: 'Kung gabi ay hinog, sa araw ay hilaw.',
+    word: 'ICCT',
+    hint: 'School mo to.',
   },
   {
-    word: 'Bombilya',
-    hint: 'Kung gabi ay hinog, sa araw ay hilaw.',
+    word: 'Uniform',
+    hint: 'Sinusuot mo kapag ano.',
   },
 ]
 
